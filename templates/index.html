@@ -3,7 +3,20 @@
         <link rel="stylesheet" href="/static/style.css" />
     </head>
     <body>
-        <h1>My Website</h1>
+        <h1>Teleskop-Haus Steuerung</h1>
+        {% for pin in pins %}
+        
+        <h2>{{ pins[pin].name  }} </h2>
+            {% if pins[pin].state == true  %}
+            is currently <strong>ON</strong>
+            <a href="/{{pin}}/off">Turn OFF</a>
+
+            {% else %}
+            is currently <strong>OFF</strong>
+            <a href="/{{pin}}/on">Turn ON</a>
+
+            {% endif %}
+        {% endfor %}
     </body>
 </html>
 
