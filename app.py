@@ -6,10 +6,10 @@ app = Flask(__name__)
 GPIO.setmode(GPIO.BCM)
 
 pins = {
-     2 : {'name' : 'GPIO  2', state : GPIO.LOW},
-     3 : {'name' : 'GPIO  3', state : GPIO.LOW},
-     4 : {'name' : 'GPIO  4', state : GPIO.LOW},
-    17 : {'name' : 'GPIO 17', state : GPIO.LOW}
+     2 : {'name' : 'GPIO  2', 'state' : GPIO.LOW},
+     3 : {'name' : 'GPIO  3', 'state' : GPIO.LOW},
+     4 : {'name' : 'GPIO  4', 'state' : GPIO.LOW},
+    17 : {'name' : 'GPIO 17', 'state' : GPIO.LOW}
 }
 
 # set each pin as output and make it low
