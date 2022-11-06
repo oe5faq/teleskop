@@ -39,7 +39,7 @@ def action(changePin, action):
         GPIO.output(changePin, GPIO.HIGH)
         message = "Turned " + deviceName + " on."
     if action == "off":
-        GPIO.output(changepPin, GPIO.LOW)
+        GPIO.output(changePin, GPIO.LOW)
         message = "Turned " + deviceNmae + " off."
 
     for pin in pins:
